@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HitungKalori - Penghitung Kalori Harian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HitungKalori - Penghitung Kalori Harian</h1>
+    </header>
+
+    <section class="form-container" id="formContainer">
+        <form id="kaloriForm">
+            <label for="gender">Jenis Kelamin:</label>
+            <input type="radio" name="gender" value="laki-laki" checked>Laki-laki
+            <input type="radio" name="gender" value="wanita">Wanita
+
+            <label for="berat">Berat Badan (kg):</label>
+            <input type="number" id="berat" required>
+
+            <label for="tinggi">Tinggi Badan (cm):</label>
+            <input type="number" id="tinggi" required>
+
+            <label for="usia">Usia (tahun):</label>
+            <input type="number" id="usia" required>
+
+            <label for="aktivitas">Tingkat Aktivitas:</label>
+            <select id="aktivitas">
+                <option value="sedentary">Tidak Aktif</option>
+                <option value="light">Aktivitas Ringan</option>
+                <option value="moderate">Aktivitas Sedang</option>
+                <option value="active">Aktivitas Berat</option>
+                <option value="extra">Aktivitas Sangat Berat</option>
+            </select>
+
+            <button type="button" onclick="hitungKalori()">Hitung Kalori</button>
+        </form>
+    </section>
+
+    <section class="info-aktivitas" id="infoAktivitas">
+        <h1>Informasi Tingkat Aktivitas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tingkat Aktivitas</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kurang Aktif</td>
+                    <td>Jika Anda sangat jarang berolahraga atau tidak sama sekali.</td>
+                </tr>
+                <tr>
+                    <td>Aktif Ringan</td>
+                    <td>Jika Anda berolahraga ringan selama satu hingga tiga hari dalam seminggu.</td>
+                </tr>
+                <tr>
+                    <td>Cukup Aktif</td>
+                    <td>Jika Anda berolahraga dengan intensitas sedang sekitar tiga hingga lima hari dalam seminggu.</td>
+                </tr>
+                <tr>
+                    <td>Sangat Aktif</td>
+                    <td>Jika Anda berolahraga dengan intensitas berat selama enam hingga tujuh hari dalam seminggu.</td>
+                </tr>
+                <tr>
+                    <td>Ekstra Aktif</td>
+                    <td>Jika Anda berolahraga dengan intensitas sangat berat sekitar enam hingga tujuh hari dalam seminggu atau melakukan pekerjaan fisik yang ekstra dan membutuhkan stamina serta fisik kuat.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="hasil" style="display:none;">
+        <h2>Hasil Perhitungan</h2>
+        <p id="bmrResult"></p>
+        <p id="kaloriResult"></p>
+    </section>    
+
+    <footer>
+        <p>&copy; 2024 CalFit. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

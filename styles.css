@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f9f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #FF8C42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid #4CAF50;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #2E8B57;
+}
+
+input[type="number"], select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #99D98C;
+}
+
+button {
+    background-color: #00C7B7;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0CB0A7;
+}
+
+.info-aktivitas {
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    border: 2px solid #4CAF50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+    color: #2E8B57;
+}
+
+table th {
+    background-color: #00C7B7;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f9f4;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #FF8C42;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Kode untuk memusatkan hasil perhitungan */
+#hasil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan secara vertikal */
+    align-items: center; /* Pusatkan secara horizontal */
+    height: 23vh; /* Sesuaikan tinggi elemen */
+    text-align: center; /* Pastikan teks berada di tengah */
+    margin: 0 auto; /* Atur margin otomatis */
+    background-color: #ffffff; /* Tambahkan warna background */
+    border: 2px solid #4CAF50; /* Tambahkan border */
+    border-radius: 10px; /* Beri sudut melengkung */
+    padding: 10px; /* Tambahkan padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+}
